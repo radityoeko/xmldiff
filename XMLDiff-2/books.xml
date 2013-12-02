@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+<books type="value">
+	<!-- this is a comment -->
+	<book title="Learning XML">
+		<authors>
+			<author>Erik T. Ray</author>
+		</authors>
+		<publisher>O'Reilly</publisher>
+	</book>
+	<book title="XQuery">
+		<authors>
+			<author>Priscilla Walmsley</author>
+		</authors>
+		<publisher>O'Reilly</publisher>
+	</book>
+	<book title="XQuery from the Experts">
+		<authors something="something" y="x" z="z">
+			<author>Howard Katz</author>
+			<author>Denise Draper</author>
+			<author>Mary Fernandez</author>
+		</authors>
+		<publisher>Addison Wesley</publisher>
+	</book>
+</books>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT differences (difference*)>
+	<!ELEMENT difference (tag)>
+	<!ELEMENT tag (tag|(inDocument1,inDocument2))>
+	<!ELEMENT inDocument1 (attributes?)>
+	<!ELEMENT attributes (attr+)>
+	<!ELEMENT attr (name,value)>
+	<!ATTLIST differences
+		value CDATA #REQUIRED >
+	<!ATTLIST difference
+		no CDATA #REQUIRED >
+	<!ATTLIST tag
+		_name CDATA #REQUIRED
+		next_child_index CDATA #IMPLIED >
+	<!ATTLIST inDocument1
+		_name CDATA #REQUIRED
+		difference_type (node_type|text_value|comment_value|
+						tag_name|number_of_children|
+						number_of_attributes|attributes)
+						#REQUIRED>
+	<!ATTLIST inDocument2
+		_name CDATA #REQUIRED>
+	<!ATTLIST attributes
+		attrcount CDATA #REQUIRED
+	>
+	<!ATTLIST attr
+		alphabetical_index CDATA #REQUIRED
+	>
